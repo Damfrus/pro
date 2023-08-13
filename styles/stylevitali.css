@@ -1,0 +1,977 @@
+@font-face {
+  font-family: "ReformaGroteskLightC";
+  src: url("./fon/ReformaGroteskLightC.eot");
+  src: local("ReformaGroteskLightC"),
+    url("./fon/ReformaGroteskLightC.eot?#iefix") format("embedded-opentype"),
+    url("./fon/ReformaGroteskLightC.woff") format("woff"),
+    url("./fon/ReformaGroteskLightC.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReformaGroteskMediumC";
+  src: url("./fon/ReformaGroteskMediumC.eot");
+  src: local("ReformaGroteskMediumC"),
+    url("./fon/ReformaGroteskMediumC.eot") format("embedded-opentype"),
+    url("./fon/ReformaGroteskMediumC.woff") format("woff"),
+    url("./fon/ReformaGroteskMediumC.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReformaGroteskDemiC";
+  src: url("./fon/ReformaGroteskDemiC.eot");
+  src: local("ReformaGroteskDemiC"),
+    url("./fon/ReformaGroteskDemiC.eot?#iefix") format("embedded-opentype"),
+    url("./fon/ReformaGroteskDemiC.woff") format("woff"),
+    url("./fon/ReformaGroteskDemiC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReformaGroteskBoldC";
+  src: url("./fon/ReformaGroteskBoldC.eot");
+  src: local("ReformaGroteskBoldC"),
+    url("./fon/ReformaGroteskBoldC.eot?#iefix") format("embedded-opentype"),
+    url("./fon/ReformaGroteskBoldC.woff") format("woff"),
+    url("./fon/ReformaGroteskBoldC.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #141414;
+}
+
+.header {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 0%, #141414 100%),
+    url(./images/5875731b6f0a892a920759bdcc3caa5d.jpeg),
+    lightgray 50% / cover no-repeat;
+  height: 1000px;
+  width: 1920px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-line {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 396px;
+}
+
+.nav-item {
+  color: var(--white, #fff);
+  text-align: center;
+  /* p / 24m */
+  font-family: "ReformaGroteskMediumC";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  /* 28.8px */
+  letter-spacing: 0.72px;
+  text-decoration: none;
+  margin-top: 40px;
+  padding-right: 40px;
+}
+
+.nav-item:hover {
+  color: red;
+  transition: 0.3s linear;
+}
+
+.burger {
+  width: 50px;
+  height: 25px;
+  flex-shrink: 0;
+  top: 42px;
+  padding-left: 725px;
+}
+
+.burger-menu:hover {
+  color: fff;
+  transition: 0.3s;
+}
+
+.header-title {
+  color: var(--accent, #db3138);
+  text-align: center;
+  font-family: "ReformaGroteskBoldC";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  /* 187.5px */
+  margin-top: 237px;
+  margin-left: 719px;
+  margin-right: 718px;
+}
+
+.header-title-down {
+  width: 146.355px;
+  height: 14.142px;
+  flex-shrink: 0;
+  margin-top: 5.97px;
+  margin-left: 887px;
+}
+
+.header-subtitle {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: "ReformaGroteskMediumC";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  /* 48px */
+}
+
+.red-pr {
+  width: 110px;
+  height: 61px;
+  flex-shrink: 0;
+  margin-right: 922px;
+  margin-left: 888px;
+  margin-top: 40px;
+}
+
+.header-lowtitle {
+  position: relative;
+}
+
+.header-lowtitle > p {
+  position: absolute;
+  top: 37px;
+  margin-left: 913px;
+}
+
+.uslugi {
+  color: var(--white, #fff);
+  text-align: center;
+  /* p / 24d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 33.6px */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.uslugi:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+/*КАРТЫ*/
+.card-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: "ReformaGroteskDemiC";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding-top: 43px;
+  padding-bottom: 20px;
+}
+
+.card-desc {
+  color: var(--accent, #db3138);
+  text-align: center;
+  /* p / 24d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 33.6px */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #141414;
+  padding-bottom: 15px;
+}
+
+.card-desc-two {
+  color: var(--accent, #db3138);
+  text-align: center;
+  /* p / 24d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 33.6px */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #141414;
+  padding-bottom: 43px;
+}
+
+.card {
+  border: 1px white solid;
+  margin-top: 103px;
+  width: 1280px;
+}
+
+/*Меню посередени*/
+.history {
+  background-color: #141414;
+  padding-top: 180px;
+  padding-left: 312px;
+}
+
+.history-title {
+  color: var(--white, #fff);
+  font-family: "ReformaGroteskDemiC";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  width: 636px;
+  height: 146px;
+}
+
+.history-img {
+  width: 146.355px;
+  height: 14.142px;
+  flex-shrink: 0;
+  padding-top: 40px;
+}
+
+.history-desc {
+  color: var(--white, #fff);
+  font-family: "ReformaGroteskMediumC";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.72px;
+  width: 526px;
+  padding-top: 61px;
+}
+
+/*Таблица карточек справа посередине*/
+.history-card {
+  display: block;
+  border: 1px solid var(--border, #898989);
+  width: 318px;
+  height: 177px;
+}
+
+.card-imag {
+  color: var(--accent, #db3138);
+  /* h2 */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-text {
+  color: var(--white, #fff);
+  text-align: center;
+  /* p / 16d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 22.4px */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cards-one {
+  margin-top: -369px;
+  margin-left: 650px;
+}
+.cards-two {
+  margin-top: -679px;
+  margin-left: 970px;
+}
+/*Скрол машин*/
+.menu {
+  background-color: #141414;
+  background-size: cover;
+}
+
+.menu-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-card {
+  text-align: center;
+  background: var(--black, #141414);
+  padding-top: 180px;
+  margin-right: 24px;
+}
+
+.menu-figur {
+  margin-top: -30px;
+}
+
+.menu-title {
+  color: var(--white, #fff);
+  text-align: center;
+  /* p / 18d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin-top: -55px;
+}
+.sleasher {
+  margin: 83px;
+  margin-top: 350px;
+  padding-bottom: 0%;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  padding: 0px;
+  position: relative;
+}
+.romb-img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+
+  position: absolute;
+  margin-top: -133px;
+  margin-left: 64px;
+}
+/*Модуль 4 описание*/
+.modul-card {
+  margin-top: 180px;
+  margin-left: 312px;
+  margin-right: 1082px;
+}
+.modul-img {
+  width: 56.472px;
+  height: 70px;
+  flex-shrink: 0;
+  position: relative;
+}
+.modul-title {
+  width: 426px;
+  height: 43px;
+  flex-shrink: 0;
+  color: var(--white, #fff);
+  /* heading / h3 */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 44.8px */
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: -55px;
+  margin-left: 100px;
+}
+.modul-desk {
+  width: 526px;
+  color: var(--white, #fff);
+  /* p / 24m */
+  font-family: "ReformaGroteskMediumC";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: 0.72px;
+  margin-top: 43px;
+}
+
+.modul-delimiter {
+  width: 146.355px;
+  height: 14.142px;
+  padding-left: 193px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*Описание слева модуль 4*/
+.modul-car {
+  width: 636px;
+  height: 550px;
+  flex-shrink: 0;
+  margin-top: -688px;
+  margin-left: 972px;
+  background-color: #141414;
+}
+.photo-desk {
+  width: 422px;
+  color: var(--white, #fff);
+  text-align: center;
+  /* p / 18d */
+  font-family: ReformaGroteskDemiC;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin-left: 107px;
+  position: relative;
+  margin-top: 50px;
+}
+.sleasher1 {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 60px;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.sleasher2 {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -40px;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.romb1 {
+  width: 50px;
+  height: 50px;
+  transform: -45deg;
+  flex-shrink: 0;
+  margin-left: 9px;
+  margin-top: 50px;
+  position: absolute;
+}
+.romb2 {
+  width: 50px;
+  height: 50px;
+  transform: -45deg;
+  flex-shrink: 0;
+  margin-left: 590px;
+  margin-top: -50px;
+  position: absolute;
+}
+.uslugi2 {
+  margin-top: 320px;
+}
+.uslugi-title {
+  color: var(--white, #fff);
+  text-align: center;
+  /* heading / h2 */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 72.8px */
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  margin-left: 642px;
+  width: 636px;
+}
+.uslugi-deliter {
+  width: 147px;
+  height: 14px;
+  flex-shrink: 0;
+
+  margin-top: 40px;
+  margin-left: 877px;
+}
+.uslugi-title-two {
+  color: var(--white, #fff);
+  font-family: "ReformaGroteskDemiC";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 44.8px */
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 61px;
+}
+.uslugi-title-two > p1 {
+  display: inline-flex;
+  padding: 20px 40px 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 60px;
+}
+.uslugi-title-two > p1:hover {
+  background: var(--accent, #db3138);
+  transition: 0.3s linear;
+}
+
+.uslugi-title-two > p2 {
+  display: inline-flex;
+  padding: 20px 40px 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.uslugi-title-two > p2:hover {
+  background: var(--accent, #db3138);
+  transition: 0.3s linear;
+}
+
+/*Карты услуг*/
+.uslugi-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-left: 312px;
+  margin-right: 312px;
+}
+.uslugi-card {
+  width: 306px;
+  height: 428px;
+  flex-shrink: 0;
+  border: 1px solid var(--border, #898989);
+  margin-right: 24px;
+}
+.uslugi-img {
+  width: 70px;
+  height: 56.531px;
+  flex-shrink: 0;
+  padding-top: 87px;
+  padding-left: 117px;
+  margin-bottom: 27.23px;
+}
+.title-card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--white, #fff);
+  text-align: center;
+  width: 170px;
+  height: 40px;
+  font-family: "ReformaGroteskDemiC";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-left: 69px;
+  margin-right: 69px;
+  margin-top: 27.23px;
+}
+.title-desk {
+  margin-left: 39px;
+  margin-top: 20px;
+  width: 226px;
+  height: 88px;
+  color: var(--white, #fff);
+  text-align: center;
+  /* p / 16d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.button-uslugi {
+  color: var(--white, #fff);
+  /* p / 18d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  width: 73px;
+  height: 25px;
+  margin-top: 25px;
+  margin-left: 106px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.button-uslugi:hover {
+  background: var(--accent, #db3138);
+  width: 45px;
+  height: 41px;
+  flex-shrink: 0;
+  transition: 0.3s linear;
+}
+
+.info-master {
+  margin-top: 180px;
+  margin-left: 1082px;
+  margin-right: 312px;
+}
+.info-img {
+  width: 56.472px;
+  height: 70px;
+  flex-shrink: 0;
+  position: relative;
+}
+.info-title {
+  width: 426px;
+  height: 43px;
+  flex-shrink: 0;
+  color: var(--white, #fff);
+  /* heading / h3 */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 44.8px */
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: -55px;
+  margin-left: 100px;
+}
+.info-desk {
+  color: var(--white, #fff);
+  /* p / 24m */
+  font-family: "ReformaGroteskMediumC";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: 0.72px;
+  width: 526px;
+  margin-top: 43px;
+}
+.info-delimiter {
+  width: 146.355px;
+  height: 14.142px;
+  padding-left: 193px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.info-car {
+  margin-left: -850px;
+  margin-top: -676px;
+  width: 636px;
+  height: 550px;
+  flex-shrink: 0;
+  position: absolute;
+}
+
+.info-romb1 {
+  width: 50px;
+  height: 50px;
+  transform: -45deg;
+  flex-shrink: 0;
+  margin-left: 9px;
+  margin-top: 50px;
+  position: absolute;
+}
+.info-sleasher1 {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 60px;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.info-photo-desk {
+  width: 422px;
+  color: var(--white, #fff);
+  text-align: center;
+  /* p / 18d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+.info-romb2 {
+  width: 50px;
+  height: 50px;
+  transform: -45deg;
+  flex-shrink: 0;
+  margin-left: 590px;
+  margin-top: -50px;
+  position: absolute;
+}
+.info-sleasher2 {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -40px;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.work-picture {
+  margin-top: 180px;
+}
+.work-title {
+  margin-left: 642px;
+  color: var(--white, #fff);
+  text-align: center;
+  /* heading / h2 */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 72.8px */
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  width: 636px;
+  height: 84px;
+}
+.work-img {
+  width: 146.355px;
+  height: 14.142px;
+  flex-shrink: 0;
+  margin-top: 40px;
+  margin-left: 887px;
+}
+
+.work-picture-all {
+  max-width: 320px;
+  max-height: 280px;
+  width: 1920px;
+  height: 840px;
+}
+.work-all-picture {
+  margin-top: 61px;
+}
+.stroka1 {
+  width: 1920px;
+  height: 280px;
+  display: flex;
+}
+.stroka2 {
+  width: 1920px;
+  height: 280px;
+  display: flex;
+}
+.stroka3 {
+  width: 1920px;
+  height: 280px;
+  display: flex;
+}
+/*Поддержка*/
+.support {
+  margin-top: 120px;
+  margin-left: 642px;
+}
+
+.support-title {
+  padding: 0px;
+  width: 636px;
+  height: 73px;
+  color: var(--white, #fff);
+  text-align: center;
+  /* heading / h2 */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 72.8px */
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+}
+
+.support-img {
+  width: 146.355px;
+  height: 14.142px;
+  flex-shrink: 0;
+  margin-top: 40px;
+  margin-left: 240px;
+}
+.name {
+  margin-right: 24px;
+  margin-top: 61px;
+  width: 306px;
+  height: 47px;
+  flex-shrink: 0;
+  border: 1px solid var(--accent, #db3138);
+  background: var(--black, #141414);
+  color: var(--white, #fff);
+  letter-spacing: 0.6px;
+}
+.tel {
+  margin-top: 61px;
+  color: var(--white, #fff);
+  width: 306px;
+  height: 47px;
+  flex-shrink: 0;
+  border: 1px solid var(--accent, #db3138);
+  background: var(--black, #141414);
+  color: var(--border, #898989);
+  letter-spacing: 0.6px;
+}
+.name::placeholder {
+  padding-left: 25px;
+  margin-left: 25px;
+  color: var(--white, #fff);
+  /* p / 16d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.tel::placeholder {
+  padding-left: 25px;
+  color: var(--border, #898989);
+  /* p / 16d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.text-dis {
+  margin-top: 24px;
+  color: #898989;
+  width: 526px;
+  height: 150px;
+  flex-shrink: 0;
+  border: 1px solid var(--border, #898989);
+  background: var(--black, #141414);
+  color: var(--white, #fff);
+  font-family: "ReformaGroteskDemiC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.text-dis {
+  padding-top: 15px;
+  color: #898989;
+  /* p / 16d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.link {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: -172px;
+  margin-left: 610px;
+}
+.link-img-tg,
+.link-img-you-tube,
+.link-img-vk {
+  border: 1px solid var(--border, #898989);
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.button-support > p {
+  margin-top: 191px;
+  color: var(--white, #fff);
+  /* p / 18d */
+  font-family: "ReformaGroteskDemiC";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  width: 73px;
+  height: 25px;
+}
+
+.button-support > p:hover {
+  background: var(--accent, #db3138);
+  width: 65px;
+  height: 41px;
+  flex-shrink: 0;
+  transition: 0.3s linear;
+  padding-top: 15px;
+}
+.geo-tegi {
+  margin-left: 339px;
+  margin-top: -61px;
+}
+.geo-desk {
+  margin-top: -25px;
+  margin-left: 35px;
+  
+  color: var(--white, #fff);
+  /* p / 16d */
+  font-family: ReformaGroteskDemiC;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+/*Финишная нав панель*/
+.finish-panel{
+margin-top: 100px;
+}
+
+
+.data-finish{
+  margin-top: 34px;
+  margin-left: 312px;
+color: var(--white, #FFF);
+/* p / 16d */
+font-family: ReformaGroteskDemiC;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 22.4px */
+letter-spacing: 0.8px;
+text-transform: uppercase;
+opacity: 0.5;
+width: 588px;
+height: 22px;
+
+}
+.nav-panel-finish{
+  margin-top: -50px;
+  height: 29px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: 1087px;
+ 
+}
